@@ -76,6 +76,7 @@ background: #ff8000;
 
 body {
     margin: 0;
+    padding: 0;
     color: white;
     background: black;
     font-family: 'Josefin Sans', sans-serif;

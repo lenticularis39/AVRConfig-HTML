@@ -6,7 +6,8 @@ function onBodyLoad() {
       else {
         document.getElementById('menu').style.height = document.getElementById('text').scrollHeight + "px";
       }
-      document.getElementById("text").style.width = (window.outerWidth - 280) + "px";
+    document.getElementById("text").style.width = (document.body.clientWidth - 265) + "px";
+      console.log(window.outerWidth + "\n");
 }
 
 window.onresize = onBodyLoad;
