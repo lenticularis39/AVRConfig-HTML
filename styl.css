@@ -52,7 +52,7 @@ background: #ff8000;
     width: 200px;
     background: linear-gradient( to right, #ff8000,  #ffb366) no-repeat;
     
-    height: calc(100% - 130px);
+    min-height: calc(100% - 130px);
 }
 
 #list {
@@ -69,8 +69,8 @@ background: #ff8000;
     left: 205px;
     background: #0059b3;
     
-    width: calc(100% - 265px);
-    height: calc(100% - 190px);
+    min-width: calc(100% - 265px);
+    min-height: calc(100% - 190px);
 }
 
 #wrap2 {
