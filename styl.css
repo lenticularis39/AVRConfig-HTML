@@ -13,17 +13,15 @@
     height: 100px;
 }
 
-
 #title {
     margin-left: 135px; 
     font-size: 50px;
 }
 
-
 #jazyk {
     position: absolute;
     right: 15px;
-    top: 12.5px;
+    top: 13px;
     border: 2px solid #ff8000;
 }
 
@@ -46,23 +44,21 @@ background: #ff8000;
 }
 
 #wrapper {
-        position: absolute;
-        top: 130px;
-         width: 100%;
-          min-height: calc(100% - 130px);
-          
-          width: 100%;
-          display: flex;
-          flex: 0 0 auto;
-          align-items: stretch;
+    position: absolute;
+    top: 130px;
+    width: 100%;
+    min-height: calc(100% - 130px);
+    width: 100%;
+    display: flex;
+    flex: 0 0 auto;
+    align-items: stretch;
 }
 
-
 #menu {
-    background: linear-gradient( to right, #ff8000,  #ffb366) no-repeat;
     min-width: 200px;
     margin-right: 5px;
     order: 1;
+    background: linear-gradient( to right, #ff8000,  #ffb366) no-repeat;
 }
 
 #list {
@@ -72,11 +68,12 @@ background: #ff8000;
 
 #text { 
     padding: 30px;
-    font-size : 20px;
-    background: #0059b3;
-    
+    padding-left: 35px;
+    padding-right: 35px;
     order: 2;
     flex-grow: 1;
+    font-size : 20px;
+    background: #0059b3;
 }
 
 body {
@@ -88,11 +85,9 @@ body {
     overflow: auto;
 }
 
-
 p {
     margin: 0;
 }
-
 
 li {
     padding: 10px;
@@ -110,7 +105,6 @@ a {
 }
 
 #menu a {
-    text-decoration: none;
     color: white;
     font-size: 25px;
 }
@@ -120,7 +114,24 @@ a {
     font-weight: 700;
 }
 
-
 #menu li:hover {
-background: black;   
+    background: black; 
+    position: relative;
+    animation-name: animation-li;
+    animation-duration: 0.5s; 
+}
+
+#icon:hover {
+    animation-name: animation-icon;
+    animation-duration: 1s;
+}
+
+@keyframes animation-icon {
+    0%   {width: 100px; height:100px; left:50px; top:12.5px;}
+    100%  {width: 125px; height:125px; left:37.5px; top:0px;}
+}
+
+@keyframes animation-li {
+    0%   {left:0px; top:0px; border-radius: 6px;}
+    100%  {left:40px; top:0px; border-radius: 6px;}
 }
