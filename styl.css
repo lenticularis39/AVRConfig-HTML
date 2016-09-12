@@ -25,6 +25,11 @@
     border: 2px solid #ff8000;
 }
 
+#jazyk li:hover {
+    animation-name: animation-language;
+    animation-duration: 1s; 
+}
+
 #language a {
     color: white;
 }
@@ -132,6 +137,11 @@ a {
 }
 
 @keyframes animation-li {
-    0%   {left:0px; top:0px; border-radius: 6px;}
-    100%  {left:40px; top:0px; border-radius: 6px;}
+    0%   {left:0px; top:0px; border-radius: 6px; opacity: 0.5;}
+    100%  {left:40px; top:0px; border-radius: 6px; opacity: 1;}
+}
+
+@keyframes animation-language {
+    0%   {opacity: 0.2;}
+    100%  {opacity: 1;}
 }
