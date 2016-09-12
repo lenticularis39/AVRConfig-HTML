@@ -60,7 +60,7 @@ background: #ff8000;
 }
 
 #menu {
-    min-width: 200px;
+    width: 200px;
     margin-right: 5px;
     order: 1;
     background: linear-gradient( to right, #ff8000,  #ffb366) no-repeat;
