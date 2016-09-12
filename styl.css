@@ -114,16 +114,26 @@ a {
     font-size: 25px;
 }
 
+#menu li {
+    width:180px;
+    transition-timing-function: ease-out;
+    transition: width 2s;
+}
+
 #menu li:hover > a { 
-    color: #ff8000;
+    /*color: #ff8000;*/
+    color: black;
     font-weight: 700;
 }
 
 #menu li:hover {
-    background: black; 
+    /*background: black; */
+    background: white;
+    border-radius: 0px 5px 5px 0px;
     position: relative;
-    animation-name: animation-li;
-    animation-duration: 0.5s; 
+    /*animation-name: animation-li;
+    animation-duration: 0.5s;*/
+    width: 220px;
 }
 
 #icon:hover {
@@ -137,8 +147,8 @@ a {
 }
 
 @keyframes animation-li {
-    0%   {left:0px; top:0px; border-radius: 6px; opacity: 0.5;}
-    100%  {left:40px; top:0px; border-radius: 6px; opacity: 1;}
+    0%   {left:0px; top:0px; opacity: 0.5;}
+    100%  {left:40px; top:0px; opacity: 1;}
 }
 
 @keyframes animation-language {
