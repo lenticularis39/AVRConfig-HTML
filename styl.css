@@ -117,39 +117,32 @@ a {
 #menu li {
     width:180px;
     transition-timing-function: ease-out;
-    transition: width 2s;
+    transition: width 0.6s;
 }
 
 #menu li:hover > a { 
-    /*color: #ff8000;*/
-    color: black;
+    color: #ff8000;
     font-weight: 700;
 }
 
 #menu li:hover {
-    /*background: black; */
-    background: white;
-    border-radius: 0px 5px 5px 0px;
+    background: black;
+    border-radius: 0px 8px 8px 0px;
     position: relative;
-    /*animation-name: animation-li;
-    animation-duration: 0.5s;*/
     width: 220px;
 }
 
 #icon:hover {
     animation-name: animation-icon;
-    animation-duration: 1s;
+    animation-duration: 2s;  
 }
 
 @keyframes animation-icon {
     0%   {width: 100px; height:100px; left:50px; top:12.5px;}
-    100%  {width: 125px; height:125px; left:37.5px; top:0px;}
+    50%  {width: 125px; height:125px; left:37.5px; top:0px;}
+    100%  {width: 100px; height:100px; left:50px; top:12.5px;}
 }
 
-@keyframes animation-li {
-    0%   {left:0px; top:0px; opacity: 0.5;}
-    100%  {left:40px; top:0px; opacity: 1;}
-}
 
 @keyframes animation-language {
     0%   {opacity: 0.2;}
