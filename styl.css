@@ -16,7 +16,7 @@
 
 #title {
     padding-left: 105px; 
-    padding-right: 17%;
+    padding-right: 125px;
     font-size: 50px;
 }
 
@@ -39,16 +39,6 @@
 
 #language li:hover {
     background: #ff8000; 
-}
-
-#currentpage {
-    position: absolute;
-    top: 0px;
-    right: 300px;
-    border: 2px solid #ff8000;
-    border-top: 0;
-    font-size: 20px;
-    padding: 5px;
 }
 
 #wrapper {
