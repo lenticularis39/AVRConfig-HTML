@@ -3,7 +3,7 @@
     height: 120px;
     padding: 15px;
     padding-left: 100px;
-    background: linear-gradient( to bottom right, #4da6ff, #0059b3) no-repeat;
+    background: linear-gradient( to bottom right, #6fc3f7, #0059b3) no-repeat;
 }
 
 #icon {
@@ -12,10 +12,12 @@
     top: 25px;
     width: 100px;
     height: 100px;
+    transition-timing-function: ease-out;
+    transition: width 0.8s, height 0.8s, top 0.8s, left 0.8s;
 }
 
 #title {
-    padding-left: 105px; 
+    padding-left: 140px; 
     padding-right: 125px;
     font-size: 50px;
 }
@@ -57,6 +59,7 @@
     margin-right: 5px;
     order: 1;
     background: linear-gradient( to right, #ff8000,  #ffb366) no-repeat;
+
 }
 
 #list {
@@ -79,16 +82,21 @@ body {
     padding: 0;
     color: white;
     background: black;
-    font-family: 'Scope One', serif;
+    font-family: 'Josefin Sans', sans-serif;
     overflow: auto;
 }
 
 h1 {
-     margin:10px;    
+     margin:10px;  
+     margin-left:0;  
 }
 
 p {
     margin: 0;
+}
+
+a {
+   cursor: pointer;
 }
 
 li {
@@ -126,14 +134,20 @@ a {
     font-size: 25px;
 }
 
+#text a {
+    color: #20fc24;
+}
+
 #menu li {
+    position:relative;
     width:180px;
     transition-timing-function: ease-out;
-    transition: width 0.6s;
+    transition: width 0.6s, background 0.6s, padding 0.6s;
 }
 
 #menu li:hover > a { 
     color: #ff8000;
+    font-weight: bold;
     font-style: italic;
 }
 
@@ -142,24 +156,15 @@ a {
     border-radius: 0px 8px 8px 0px;
     position: relative;
     width: 220px;
-    animation-name: animation-li;
-    animation-duration: 0.6s;
+    padding-top: 13px;
+    padding-bottom: 13px;
 }
 
 #icon:hover {
-    animation-name: animation-icon;
-    animation-duration: 2s;  
-}
-
-@keyframes animation-icon {
-    0%   {width: 100px; height:100px; left:50px; top:25px;}
-    50%  {width: 150px; height:150px; left:25px; top:0px;}
-    100%  {width: 100px; height:100px; left:50px; top:25px;}
-}
-
-@keyframes animation-li {
-    0%   {opacity: 0.3;}
-    100%  {opacity: 1;}
+    height:150px;
+    width:150px;
+    left:25px;
+    top:0;
 }
 
 @keyframes animation-language {
