@@ -89,6 +89,7 @@ body {
 h1 {
      margin:10px;  
      margin-left:0;  
+     font-size: 30px;
 }
 
 p {
@@ -125,7 +126,7 @@ a {
 }
 
 #text a {
-    color: white;
+    color: #fcc50f;
     font-size:20px;
 }
 
@@ -134,30 +135,23 @@ a {
     font-size: 25px;
 }
 
-#text a {
-    color: #20fc24;
-}
-
 #menu li {
     position:relative;
     width:180px;
     transition-timing-function: ease-out;
-    transition: width 0.6s, background 0.6s, padding 0.6s;
+    transition: width 0.6s, background 0.6s, border-radius 0.6s;
 }
+
 
 #menu li:hover > a { 
     color: #ff8000;
-    font-weight: bold;
     font-style: italic;
 }
 
 #menu li:hover {
     background: black;
     border-radius: 0px 8px 8px 0px;
-    position: relative;
     width: 220px;
-    padding-top: 13px;
-    padding-bottom: 13px;
 }
 
 #icon:hover {
@@ -170,4 +164,16 @@ a {
 @keyframes animation-language {
     0%   {opacity: 0.2;}
     100%  {opacity: 1;}
+}
+
+/*tabulka*/
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 5px;
 }
