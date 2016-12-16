@@ -141,31 +141,37 @@ a {
 }
 
 
-/*#menu li:hover > a { 
+#menu li:hover > a { 
     color: #ff8000;
     font-style: italic;
-}*/
+}
 
 /*#menu li:hover {
     background: black;
     border-radius: 0px 8px 8px 0px;
     width: 220px;
 }*/
-
+.button {
+  display: inline-block;
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.6s;
+}
 .button:before {
-    pointer-events: none;
-	content:'';
+	content:"";
 	position: absolute;
+    z-index: -1;
 	top: 0px;
 	left: 0px;
 	width: 0px;
 	height: 100%;
-	background: black;
+	background: rgba(0, 0, 0, 0.5);
 	transition: all 0.6s ease;
 } 
+
 .button:hover:before {
-	width: 100%;
-    color: #ff8000;
+ width: 100%;
+ background: rgba(0, 0, 0, 1);
+ color: #ff8000;
 }
 
 #icon:hover {
