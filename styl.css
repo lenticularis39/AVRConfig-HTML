@@ -143,14 +143,8 @@ a {
 
 #menu li:hover > a { 
     color: #ff8000;
-    font-style: italic;
 }
 
-/*#menu li:hover {
-    background: black;
-    border-radius: 0px 8px 8px 0px;
-    width: 220px;
-}*/
 .button {
   display: inline-block;
   transform: perspective(1px) translateZ(0);
@@ -171,7 +165,6 @@ a {
 .button:hover:before {
  width: 100%;
  background: rgba(0, 0, 0, 1);
- color: #ff8000;
 }
 
 #icon:hover {
