@@ -125,10 +125,10 @@ a {
     font-size: 25px; 
 }
 
-/*#text a {
-    color: #fcc50f;
+#text a {
+    color: #ff8000;
     font-size:20px;
-}*/
+}
 
 #menu a {
     color: white;
