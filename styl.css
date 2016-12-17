@@ -127,12 +127,11 @@ a {
 
 #text a {
     color: #ff8000;
-    font-size:20px;
+    font-size:30px;
 }
 
 #menu a {
     color: white;
-    font-size: 25px;
 }
 
 #menu li {
