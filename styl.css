@@ -97,7 +97,9 @@ p {
 }
 
 a {
-   cursor: pointer;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 25px; 
 }
 
 li {
@@ -110,19 +112,9 @@ li {
     list-style-type: none;
 }
 
-#poznamka {
-    border: 2px white solid;
-    padding: 5px;
-}
-
 ul {
     margin: 0;
     padding: 0;
-}
-
-a {
-    text-decoration: none;
-    font-size: 25px; 
 }
 
 #text a {
@@ -135,8 +127,8 @@ a {
 }
 
 #menu li {
-    position:relative;
-    width:180px;
+    position: relative;
+    width: 180px;
 }
 
 #menu li:hover > a { 
